@@ -1,0 +1,71 @@
+<HTML>  
+
+  	
+	<HEAD>	
+	<meta charset="utf-8">
+	<title> COMENTARIOS </title>
+	<link rel="stylesheet" href="CSS.css">
+
+		  <style>
+			
+			
+			body { background-image: url(https://images7.alphacoders.com/540/thumbbig-540347.webp);
+			background-size: 1900px;
+		
+			}
+
+
+
+	</style>	
+
+	<script type="text/javascript">
+	confirm("GRACIAS POR TUS COMENTARIOS");
+	</script>
+
+	</HEAD>
+
+		
+	<BODY>
+		<center><h3><b>AÑADE UN COMENTARIO:</b></h3>		
+
+	
+	<form>		
+ <ul>
+  <li>
+    <label for="name"><b>Nombre:</b></label><br>
+    <input type="text" placeholder="Su nombre de usuario">
+  </li>
+  <li>
+    <label><b>Correo electrónico:</b></label><br>
+    <input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="Su dirección de correo">
+  </li>
+  <li>
+    <label for="msg"><b>Mensaje:</b></label><br>
+   
+
+
+<!CONTADOR DE CARACTERES DE COMENTARIO-->
+
+<textarea id="content" placeholder="Escribe ... (MÁXIMO 100 CARACTERES)" maxlength="100" required></textarea>
+	<p><b>Número de caracteres: </b><span id="counter"></span></p>
+
+	<script type="text/javascript">
+		function count(){
+			document.getElementById("counter").textContent = document.getElementById("content").value.length + "/100";
+		}
+		
+		document.getElementById("content").addEventListener("input", count);
+	</script>
+
+<input type="reset">
+
+ <form>
+    <button type="submit" formaction="index.html">Enviar</button>
+  </form>
+
+
+
+
+
+	</BODY>
+</HTML>
